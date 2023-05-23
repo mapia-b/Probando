@@ -1,0 +1,67 @@
+.container-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 5rem;
+    margin:6rem;
+}
+
+@media (min-width:$tablet) {
+    .container-card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 
+        
+}
+}
+
+
+@media (min-width:$desktop) {
+    .container-card{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) 
+}
+}
+
+/*no me funciono esto, revisar*/
+.card {
+    border-radius: 266px;
+    gap: 2rem;
+    img {
+        width: 10rem;
+        align-self: center;
+    }
+        p{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+       
+    }
+}
+
+@media (min-width:$tablet) {
+    .card img {
+            width: 15rem;
+            align-self: center;
+        }
+    }
+
+
+@media (min-width:$desktop) {
+        .card img {
+                width: 20rem;
+                align-self: center;
+            }
+        }
+
+        /*no se me centra el texto de las card*/
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+   margin: 0, auto;
+   background-color: $color-primario;
+  
+}
+    
